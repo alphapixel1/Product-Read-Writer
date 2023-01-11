@@ -48,7 +48,7 @@ public class ProductReader {
                 System.err.println("Line is not a product: \t"+l);
             l = reader.readLine();
         }
-        ConsoleTable.PrintTable("PEOPLE",
+        ConsoleTable.PrintTable("PRODUCTS",
                 Arrays.asList("ID#","NAME","DESCRIPTION","COST"),
                 people.stream().map(Product::toList).collect(Collectors.toList())
         );
